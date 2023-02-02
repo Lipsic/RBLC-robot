@@ -10,11 +10,13 @@ puppeteer.launch({ headless: false, executablePath: executablePath(), }).then(as
 
   console.log('Running tests..')
 
+
   const urls = [
     "https://www.google.com/",
     "https://www.saucedemo.com/",
     "https://www.youtube.com/"
   ];
+
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
     console.log(url)
